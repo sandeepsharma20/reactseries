@@ -1,12 +1,12 @@
  import conf from "../conf/conf";
  import {Client,Account,ID} from "appwrite";
  export   class AuthService {
-    client =new client();
+    client =new Client();
     account;
     constructor(){
         this.client
         .setEndpoint(conf.endpoint)
-        .setProject(conf.appwriteprojectId)
+        .setProject(conf.appwriteProjectId)
     }
     async createAccount({email,password,name}){
         try{
