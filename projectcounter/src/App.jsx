@@ -6,8 +6,8 @@ function App() {
  //let counter=0;
 
  const addValue=()=>{
-  counter=counter+1;
-setCounter(counter)
+ // counter=counter+1;
+setCounter(counter+=1)
   
  }
 const removeValue=()=>{
